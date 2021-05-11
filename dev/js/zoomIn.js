@@ -30,7 +30,8 @@ waterTL.to("#water1",{duration:17, x:300},"water")
         .to("#water6",{duration:17, x:300},"water")
         .to("#water7",{duration:17, x:300},"water")
         .to("#water8",{duration:17, x:300},"water")
-            
+        .to("#water9",{duration:17, x:300},"water")
+
 function controlWater(){
     waterTL.play()
  }
