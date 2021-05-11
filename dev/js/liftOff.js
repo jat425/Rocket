@@ -26,8 +26,6 @@ flamesTL.to("#Flame1",{duration:0.35, scaleY:.25,yoyo:true, repeat:-1},"flames")
         .to("#Flame3",{duration:0.10, scaleY:.25,yoyo:true, repeat:-1},"flames")
             
 function controlFlames(){
-    gsap.set("Flame1",{display:"block"});
-    gsap.set("Flame2",{display:"block"});
-    gsap.set("Flame3",{display:"block"});
+    gsap.set("Flames",{display:"block"});
     flamesTL.play()
  }
