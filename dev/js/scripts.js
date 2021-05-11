@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(GSDevTools);
+// gsap.registerPlugin(GSDevTools);
 
 import { zoomTL } from "./zoomIn"
 import { fadeInTL } from "./fadeIn"
@@ -17,11 +17,9 @@ mainTL.add(fadeInTL)
         .add(zoomTL, "-=7")
         .add(RocketTL, "-=2") 
         .add(liftOffTL, "-=1") 
-        .add(flightTL) 
-        .add(marsZoomTL) 
-        .add(landingTL) 
-
-
+        .add(flightTL, "zoomFlight") 
+        .add(marsZoomTL, "zoomFlight") 
+        .add(landingTL);
 
 
 
